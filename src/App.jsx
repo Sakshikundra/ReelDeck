@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "./Pages/Dashboard";
-import Ideas from "./Pages/Ideas.JSX";
+import Ideas from "./Pages/Ideas";
 import Collabs from "./Pages/Collabs";
 import Notes from "./Pages/Notes";
 import Analytics from "./Pages/Analytics";
