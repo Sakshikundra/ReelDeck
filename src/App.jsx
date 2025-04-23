@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
-import Dashboard from "./pages/Dashboard";
-import Ideas from "./pages/Ideas";
-import Collabs from "./pages/Collabs";
-import Notes from "./pages/Notes";
-import Analytics from "./pages/Analytics";
-import Settings from "./pages/Settings";
+import Dashboard from "./Pages/Dashboard";
+import Ideas from "./Pages/Ideas";
+import Collabs from "./Pages/Collabs";
+import Notes from "./Pages/Notes";
+import Analytics from "./Pages/Analytics";
+import Settings from "./Pages/Settings";
 import MainLayout from "./layout/MainLayout";
-import Planner from "./pages/Planner";
+import Planner from "./Pages/Planner";
 
 function App() {
   return (
