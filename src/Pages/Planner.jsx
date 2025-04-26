@@ -44,7 +44,7 @@ export default function Planner() {
 
   return (
     <div className="p-4">
-      <h2 className="text-2xl font-bold mb-4">📅 Content Planner</h2>
+      <h2 className="text-2xl font-bold mb-4"> Content Planner</h2>
       <div className="flex flex-col md:flex-row gap-6">
         <Calendar
           onClickDay={handleDateClick}
@@ -108,9 +108,9 @@ export default function Planner() {
               onChange={handleInputChange}
               className="w-full p-2 rounded border mb-4 dark:bg-gray-700 dark:border-gray-600"
             >
-              <option value="Idea">💡 Idea</option>
-              <option value="Edit">✂️ Editing</option>
-              <option value="Post">📤 Posting</option>
+              <option value="Idea"> Idea</option>
+              <option value="Edit"> Editing</option>
+              <option value="Post"> Posting</option>
             </select>
             <div className="flex justify-end gap-2">
               <button

@@ -58,7 +58,7 @@ export default function Notes() {
 
   return (
     <div className="max-w-5xl mx-auto p-4 text-gray-900 dark:text-gray-100">
-      <h1 className="text-3xl font-bold mb-4 text-center">📚 Notes with Tags</h1>
+      <h1 className="text-3xl font-bold mb-4 text-center"> Notes with Tags</h1>
 
       {/* Search & Tag Filter */}
       <div className="mb-4 space-y-2">
@@ -109,9 +109,9 @@ export default function Notes() {
           value={priority}
           onChange={(e) => setPriority(e.target.value)}
         >
-          <option value="High">🔴 High</option>
-          <option value="Medium">🟡 Medium</option>
-          <option value="Low">🟢 Low</option>
+          <option value="High"> High</option>
+          <option value="Medium"> Medium</option>
+          <option value="Low"> Low</option>
         </select>
         <textarea
           placeholder="Note content..."

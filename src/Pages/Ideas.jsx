@@ -85,7 +85,7 @@ export default function Ideas() {
 
   return (
     <div className="text-gray-800 dark:text-gray-100">
-      <h1 className="text-3xl font-bold mb-4">🧠 Content Ideas</h1>
+      <h1 className="text-3xl font-bold mb-4"> Content Ideas</h1>
 
       <div className="mb-4">
         <label className="mr-2 font-semibold">Select your niche:</label>
@@ -103,7 +103,7 @@ export default function Ideas() {
       </div>
 
       <div className="bg-blue-50 dark:bg-blue-900 p-3 rounded mb-6">
-        <h2 className="font-semibold mb-2">💡 Viral Ideas for {niche}</h2>
+        <h2 className="font-semibold mb-2"> Viral Ideas for {niche}</h2>
         <ul className="list-disc ml-5 space-y-1">
           {viralSuggestions.map((idea, index) => (
             <li key={index} className="text-sm">
@@ -182,7 +182,7 @@ export default function Ideas() {
               </div>
               {idea.note && (
                 <p className="text-sm mt-1 text-gray-600 dark:text-gray-300">
-                  📝 {idea.note}
+                   {idea.note}
                 </p>
               )}
             </div>

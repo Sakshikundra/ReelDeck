@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
-import { saveAs } from "file-saver";
+
 import MiniCourse from "./MiniCourse";
 
 
@@ -115,23 +115,19 @@ ${influencerName || "[Your Name]"}
       setCollabs(updated);
     };
 
-  const downloadCSV = () => {
-    const csvContent = `Brand,Status,Rate\n${collabInitialData.map(d => `${d.name},${d.status},${d.rate}`).join("\n")}`;
-    const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
-    saveAs(blob, "collab-tracker.csv");
-  };
+
 
 
   return (
     <div className="p-6 space-y-10 bg-white dark:bg-gray-900 min-h-screen text-black dark:text-white">
       <div className="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-6 rounded-xl shadow-lg">
-        <h1 className="text-3xl font-bold mb-2">Collaboration Command Center 🚀</h1>
+        <h1 className="text-3xl font-bold mb-2">Collaboration Command Center </h1>
         <p className="text-sm">Plan smart, pitch like a pro, and track your earnings.</p>
       </div>
 
       {/* Price Calculator */}
       <div className="p-6 rounded-xl shadow border dark:border-gray-700 bg-gray-100 dark:bg-gray-800">
-        <h2 className="text-xl font-bold mb-4">🎯 Advanced Reel Price Calculator</h2>
+        <h2 className="text-xl font-bold mb-4">Advanced Reel Price Calculator</h2>
         <div className="grid gap-4">
           <label htmlFor="Followers" >Followers</label>
           <input type="number" placeholder="Followers" value={followers} onChange={(e) => setFollowers(+e.target.value)} className="p-2 border rounded w-full dark:bg-gray-700 dark:border-gray-600" />
@@ -169,7 +165,7 @@ ${influencerName || "[Your Name]"}
 
       {/* Earnings Chart */}
       <div className="p-6 rounded-xl shadow border dark:border-gray-700 bg-gray-100 dark:bg-gray-800">
-        <h2 className="text-xl font-bold mb-4">📈 Monthly Earnings Tracker</h2>
+        <h2 className="text-xl font-bold mb-4"> Monthly Earnings Tracker</h2>
         <ResponsiveContainer width="100%" height={200}>
           <LineChart data={monthlyEarnings}>
             <CartesianGrid strokeDasharray="3 3" stroke="#ccc" />
@@ -187,7 +183,7 @@ ${influencerName || "[Your Name]"}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
     >
-      <h2 className="text-xl font-bold mb-4">📅 Monthly Collab Tracker</h2>
+      <h2 className="text-xl font-bold mb-4"> Monthly Collab Tracker</h2>
       
       {/* Collab Form */}
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-6">
@@ -237,7 +233,7 @@ ${influencerName || "[Your Name]"}
         onClick={addCollab}
         className="bg-black text-white px-4 py-2 rounded-xl hover:bg-gray-800 transition"
       >
-        ➕ Add Collab
+         Add Collab
       </button>
 
       {/* Collab List */}
@@ -256,9 +252,9 @@ ${influencerName || "[Your Name]"}
               >
                 <div className="flex flex-col">
                   <span className="font-semibold text-lg">{collab.brand}</span>
-                  <span className="text-sm text-gray-600">🎯 {collab.deliverables}</span>
-                  <span className="text-sm">💰 ₹{collab.price}</span>
-                  <span className="text-sm">🗓️ Deadline: {collab.deadline}</span>
+                  <span className="text-sm text-gray-600">{collab.deliverables}</span>
+                  <span className="text-sm"> ₹{collab.price}</span>
+                  <span className="text-sm"> Deadline: {collab.deadline}</span>
                   <span className={`text-sm font-medium ${collab.status === "Completed" ? "text-green-600" : "text-yellow-600"}`}>
                     Status: {collab.status}
                   </span>
@@ -275,9 +271,9 @@ ${influencerName || "[Your Name]"}
         )}
       </div>
     </div>
-    {/* Email Generator */}
+    
     <div className="p-6 rounded-xl shadow border dark:border-gray-700 bg-gray-100 dark:bg-gray-800">
-        <h2 className="text-xl font-bold mb-4">📬 Email Writer</h2>
+        <h2 className="text-xl font-bold mb-4">Email Writer</h2>
         <div className="grid gap-2">
           <input type="text" placeholder="Your Name" value={influencerName} onChange={(e) => setInfluencerName(e.target.value)} className="p-2 border rounded dark:bg-gray-700 dark:border-gray-600" />
           <input type="text" placeholder="Brand/Collaborator's Name" value={collabName} onChange={(e) => setCollabName(e.target.value)} className="p-2 border rounded dark:bg-gray-700 dark:border-gray-600" />
@@ -295,12 +291,7 @@ ${influencerName || "[Your Name]"}
       </div>
       
 
-      {/* Download CSV */}
-      <div className="text-center">
-        <button onClick={downloadCSV} className="bg-purple-600 text-white p-2 rounded hover:bg-purple-700">
-          Download Collab Tracker CSV
-        </button>
-      </div>
+      
     </div>
 
     

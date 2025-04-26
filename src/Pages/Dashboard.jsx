@@ -13,9 +13,9 @@ const Dashboard = () => {
   ];
 
   const todaySchedule = [
-    { time: "4 PM", task: "🎥 Film 'ReelDeck Tour'" },
-    { time: "6 PM", task: "📝 Script 'AI vs Human Creators'" },
-    { time: "8 PM", task: "✨ Edit 'Behind the Scenes'" },
+    { time: "4 PM", task: " Film 'ReelDeck Tour'" },
+    { time: "6 PM", task: " Script 'AI vs Human Creators'" },
+    { time: "8 PM", task: " Edit 'Behind the Scenes'" },
   ];
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const Dashboard = () => {
     <div className="space-y-6">
       {/* Greeting */}
       <div>
-        <h2 className="text-3xl font-semibold">👋 Welcome back, Creator!</h2>
+        <h2 className="text-3xl font-semibold"> Welcome back, Creator!</h2>
         <p className="text-gray-500 dark:text-gray-400">Let’s build your best content today!</p>
       </div>
 
@@ -35,23 +35,23 @@ const Dashboard = () => {
       <div className="grid md:grid-cols-3 gap-6">
         {/* Focus Box */}
         <div className="bg-white dark:bg-gray-800 p-5 rounded-2xl shadow">
-          <h3 className="text-xl font-semibold mb-2">🎯 Today's Focus</h3>
+          <h3 className="text-xl font-semibold mb-2"> Today's Focus</h3>
           <p className="text-gray-700 dark:text-gray-300">Edit & Post 1 Reel today!</p>
         </div>
 
         {/* Quote Box */}
         <div className="bg-white dark:bg-gray-800 p-5 rounded-2xl shadow">
-          <h3 className="text-xl font-semibold mb-2">💬 Creator Quote</h3>
+          <h3 className="text-xl font-semibold mb-2"> Creator Quote</h3>
           <p className="italic text-gray-700 dark:text-gray-300">"{quote}"</p>
         </div>
 
         {/* Stats Box */}
         <div className="bg-white dark:bg-gray-800 p-5 rounded-2xl shadow">
-          <h3 className="text-xl font-semibold mb-2">📊 Your Progress</h3>
+          <h3 className="text-xl font-semibold mb-2"> Your Progress</h3>
           <ul className="text-gray-700 dark:text-gray-300 space-y-1">
-            <li>💡 5 Ideas</li>
-            <li>📝 3 Notes</li>
-            <li>🤝 2 Collab Requests</li>
+            <li> 5 Ideas</li>
+            <li> 3 Notes</li>
+            <li> 2 Collab Requests</li>
           </ul>
         </div>
       </div>
@@ -59,11 +59,11 @@ const Dashboard = () => {
       {/* Streak + Alerts */}
       <div className="grid md:grid-cols-2 gap-6">
         <div className="bg-white dark:bg-gray-800 p-5 rounded-2xl shadow">
-          <h3 className="text-xl font-semibold mb-2">🔥 Creator Streak</h3>
-          <p className="text-gray-700 dark:text-gray-300">You've created for <span className="font-bold">{streak}</span> days in a row. Keep the fire alive! 🔥</p>
+          <h3 className="text-xl font-semibold mb-2"> Creator Streak</h3>
+          <p className="text-gray-700 dark:text-gray-300">You've created for <span className="font-bold">{streak}</span> days in a row. Keep the fire alive! </p>
         </div>
         <div className="bg-yellow-100 text-yellow-800 border-l-4 border-yellow-500 p-5 rounded-2xl">
-          <h3 className="text-lg font-bold mb-1">⚠️ Reminder</h3>
+          <h3 className="text-lg font-bold mb-1"> Reminder</h3>
           <p>You haven’t added a new idea today. Let’s go!</p>
         </div>
       </div>
@@ -89,7 +89,7 @@ const Dashboard = () => {
 
       {/* Today’s Schedule */}
       <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow">
-        <h3 className="text-xl font-semibold mb-4">📅 Today’s Schedule</h3>
+        <h3 className="text-xl font-semibold mb-4">Today’s Schedule</h3>
         <ul className="space-y-2 text-gray-700 dark:text-gray-300">
           {todaySchedule.map((item, idx) => (
             <li key={idx} className="flex justify-between items-center">
@@ -102,19 +102,19 @@ const Dashboard = () => {
 
       {/* Brain Dump */}
       <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow">
-        <h3 className="text-xl font-semibold mb-4">🧠 Brain Dump</h3>
+        <h3 className="text-xl font-semibold mb-4">Brain Dump</h3>
         <textarea
           className="w-full p-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
           placeholder="Drop your thoughts, ideas, or anything on your mind..."
         ></textarea>
         <button className="mt-3 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
-          ➕ Save Note
+           Save Note
         </button>
       </div>
 
       {/* Quick Actions */}
       <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow">
-        <h3 className="text-xl font-semibold mb-4">⚡ Quick Actions</h3>
+        <h3 className="text-xl font-semibold mb-4"> Quick Actions</h3>
         <div className="flex gap-4 flex-wrap">
           <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">+ Add Idea</button>
           <button className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">+ Add Note</button>
